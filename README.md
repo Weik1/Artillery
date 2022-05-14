@@ -10,6 +10,10 @@ JAVA 插件化漏洞扫描器（Weblogic、Tomcat、Spring...），Gui基于java
 
   ![image-20220515013757781](README.assets/image-20220515013757781.png)
 
+联系方式：MTI1MjgyMDg0OSMo6A//YjpAKXFxLmNvbQ==
+
+有任何问题，欢迎交流👏，提交POC请提issue或者直接联系我也行，开发能力实在堪忧，就不放源码了，需要的师傅可以直接邮件私聊。
+
 ## 更新记录
 
 ```
@@ -42,10 +46,6 @@ JAVA 插件化漏洞扫描器（Weblogic、Tomcat、Spring...），Gui基于java
                 
 2022.05.12 - artillery V1.0 
 ```
-
-联系方式：MTI1MjgyMDg0OSMo6A//YjpAKXFxLmNvbQ==
-
-欢迎交流👏，提交POC请提issue或者直接联系我也行。
 
 ### Usage:
 
@@ -96,11 +96,9 @@ POC插件目录放在同目录下目录结构如下，Plugin/中间件类型/lib
 
    返回值为String result，即扫描结果，例如  "存在漏洞"
 
-4. System.out.print()的输出会被重定向到扫描器下方的输出控制台中，例如POC中 System.out.println("回显："+res) 就会在输出在扫描器中。
+4. System.out.print()的输出会被重定向到扫描器下方的输出控制台中，例如POC中 System.out.println("回显："+res) 就会在输出在扫描器中，如图。
 
 5. 最终编译成class或者jar包都可，**注意文件命名须与类名相同(如CVE-2016-0638.class)**，将需要的依赖放到 Plugin/中间件类型/libs(poc的依赖)，poc放到 Plugin/中间件类型/payloads
-
-6. 
 
    ![image-20220512131124928](README.assets/image-20220512131124928.png)
 
