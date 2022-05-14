@@ -1,15 +1,32 @@
-# Artillery 插件化JAVA中间件漏洞扫描器（Weblogic、Tomcat、Spring...）
+# Artillery 插件化 JAVA 漏洞扫描器（Weblogic、Tomcat、Spring...）
 
-插件化漏洞扫描器，Gui基于javafx，插件化主要是通过java的反射调用实现。POC 目前集成 Weblogic、Tomcat、Shiro、Spring等。
+JAVA 插件化漏洞扫描器（Weblogic、Tomcat、Spring...），Gui基于javafx，POC 目前集成 Weblogic(21个)，Tomcat、Shiro、Spring等陆续更新中。
 
 - 插件化
+
 - 批量扫描
+
 - 支持多个Java中间件
+
+  ![image-20220515012307425](README.assets/image-20220515012307425.png)
 
 ## 更新记录
 
 ```
-2022.05.12 - artillery V1.0 
+2022.05.15 - 更新一些小bug
+
+2022.05.15 - 更新Weblogic 系列漏洞 POC 10个
+                CVE-2020-14883 CVE_2020_14883.class
+                CVE-2020-14882 CVE_2020_14882.class
+                CVE-2019-2729 CVE_2019_2729.class
+                CVE-2019-2725 CVE_2019_2725.class
+                CVE-2018-3252 CVE_2018_3252.class
+                CVE-2018-2894 CVE_2018_2894.class
+                CVE-2017-3506 CVE_2017_3506.class
+                CVE-2017-10271 CVE_2017_10271.class
+                CVE-2014-4210 CVE_2014_4210.class
+                CVE-2018-3245 CVE_2018_3245.class
+
 2022.05.12 - 更新Weblogic T3反序列化系列 POC 11个
                 CVE-2015-4852 CVE_2015_4852.class
                 CVE-2016-0638 CVE_2016_0638.class
@@ -22,7 +39,8 @@
                 CVE-2020-2551 CVE_2020_2551.class
                 CVE-2020-2555 CVE_2020_2555.class
                 CVE-2020-2883 CVE_2020_2883.class
-              
+                
+2022.05.12 - artillery V1.0 
 ```
 
 联系方式：MTI1MjgyMDg0OSMo6A//YjpAKXFxLmNvbQ==
@@ -54,15 +72,17 @@ POC插件目录放在同目录下目录结构如下，Plugin/中间件类型/lib
 └── artillery-1.0-SNAPSHOT-jar-with-dependencies.jar
 ```
 
-打开状态：
+扫描器UI
 
-![image-20220512125759020](README.assets/image-20220512125759020.png)
+![image-20220515012244605](README.assets/image-20220515012244605.png)
 
 右键添加扫描任务，任务目标支持多个。
 
 ![image-20220512130002107](README.assets/image-20220512130002107.png)
 
-![image-20220512130016085](README.assets/image-20220512130016085.png)
+扫描截图
+
+![image-20220515011707516](README.assets/image-20220515011707516.png)
 
 ## POC插件编写规范
 
@@ -78,7 +98,9 @@ POC插件目录放在同目录下目录结构如下，Plugin/中间件类型/lib
 
 4. System.out.print()的输出会被重定向到扫描器下方的输出控制台中，例如POC中 System.out.println("回显："+res) 就会在输出在扫描器中。
 
-5. 最终编译成class或者jar包都可，将需要的依赖放到 Plugin/中间件类型/libs(poc的依赖)，poc放到 Plugin/中间件类型/payloads
+5. 最终编译成class或者jar包都可，**注意文件命名须与类名相同(如CVE-2016-0638.class)**，将需要的依赖放到 Plugin/中间件类型/libs(poc的依赖)，poc放到 Plugin/中间件类型/payloads
+
+6. 
 
    ![image-20220512131124928](README.assets/image-20220512131124928.png)
 
@@ -114,10 +136,10 @@ public class CVE_2016_0638{
         System.out.println("回显："+res);  
         for(String sig : checkSig){
             if(res.contains(sig)){
-                return "存在漏洞 "+this.name;
+                return "存在 "+this.name;
             }
         }
-        return "未发现漏洞 "+this.name;
+        return "未发现 "+this.name;
         //根据回显判断是否存在漏洞
     }
     public static void main(String[] args) throws Exception {
