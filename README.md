@@ -8,7 +8,7 @@ JAVA 插件化漏洞扫描器（Weblogic、Tomcat、Spring...），Gui基于java
 
 - 支持多个Java中间件
 
-  ![image-20220515012307425](README.assets/image-20220515012307425.png)
+  ![image-20220515013757781](README.assets/image-20220515013757781.png)
 
 ## 更新记录
 
@@ -74,7 +74,7 @@ POC插件目录放在同目录下目录结构如下，Plugin/中间件类型/lib
 
 扫描器UI
 
-![image-20220515012244605](README.assets/image-20220515012244605.png)
+![image-20220515013803650](README.assets/image-20220515013803650.png)
 
 右键添加扫描任务，任务目标支持多个。
 
@@ -82,7 +82,7 @@ POC插件目录放在同目录下目录结构如下，Plugin/中间件类型/lib
 
 扫描截图
 
-![image-20220515011707516](README.assets/image-20220515011707516.png)
+![image-20220515013814116](README.assets/image-20220515013814116.png)
 
 ## POC插件编写规范
 
