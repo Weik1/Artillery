@@ -1,6 +1,6 @@
 # Artillery 插件化 JAVA 漏洞扫描器（Weblogic、Tomcat、Spring...）
 
-JAVA 插件化漏洞扫描器（Weblogic、Tomcat、Spring...），Gui基于javafx，POC 目前集成 Weblogic(21个)，Tomcat、Shiro、Spring等陆续更新中。
+JAVA 插件化漏洞扫描器（Weblogic、Tomcat、Spring...），Gui基于javafx，POC 目前集成 Weblogic(21个)，Tomcat(2)、Shiro、Spring等陆续更新中。
 
 - 插件化
 
@@ -17,9 +17,15 @@ JAVA 插件化漏洞扫描器（Weblogic、Tomcat、Spring...），Gui基于java
 ## 更新记录
 
 ```
+2022.05.16 - 更新了插件目录异常问题、Tomcat 系列漏洞 POC 2个
+                CVE-2017-12615 CVE_2017_12615.jar
+                Tomcat后台泄漏 ADMIN_PAGE.jar
+                
+2022.05.16 - 更新不能同时扫描不同类型POC的问题，更新POC HTTPS问题
+
 2022.05.15 - 更新一些小bug
 
-2022.05.15 - 更新Weblogic 系列漏洞 POC 10个
+2022.05.15 - 更新 Weblogic 系列漏洞 POC 10个
                 CVE-2020-14883 CVE_2020_14883.class
                 CVE-2020-14882 CVE_2020_14882.class
                 CVE-2019-2729 CVE_2019_2729.class
@@ -31,7 +37,7 @@ JAVA 插件化漏洞扫描器（Weblogic、Tomcat、Spring...），Gui基于java
                 CVE-2014-4210 CVE_2014_4210.class
                 CVE-2018-3245 CVE_2018_3245.class
 
-2022.05.12 - 更新Weblogic T3反序列化系列 POC 11个
+2022.05.12 - 更新 Weblogic T3反序列化系列 POC 11个
                 CVE-2015-4852 CVE_2015_4852.class
                 CVE-2016-0638 CVE_2016_0638.class
                 CVE-2016-3510 CVE_2016_3510.class
