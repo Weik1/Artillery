@@ -6,7 +6,7 @@ JAVA 插件化漏洞扫描器（Weblogic、Tomcat、Spring...），Gui基于java
 
 - 批量扫描
 
-- 支持多个Java中间件、组件
+- 支持多个Java中间件
 
   ![image-20220517144031890](README.assets/image-20220517144031890.png)
 
@@ -17,6 +17,12 @@ JAVA 插件化漏洞扫描器（Weblogic、Tomcat、Spring...），Gui基于java
 ## 更新记录
 
 ```
+2022.05.17 - 更新 JBoss 系列漏洞 POC 3个
+                  CVE-2017-12149 CVE_2017_12149.jar
+                  CVE-2017-7504  CVE_2017_7504.jar
+                  CVE-2015-7501  CVE_2015_7501.jar
+                  JBoss 后台      ADMIN_PAGE.jar
+
 2022.05.17 - 更新部分系统UI，解决退出时假死问题，删除了一些POC的回显输出（感谢AbelChe大佬的支持）
                 
 2022.05.16 - 更新了插件目录异常问题、Tomcat 系列漏洞 POC 2个
