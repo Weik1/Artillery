@@ -163,7 +163,7 @@ public class CVE_2016_0638{
 <table>
   <tr>
     <td align="center"><a href="https://github.com/AbelChe"><img src="https://avatars.githubusercontent.com/u/40518242?v=4" width="100px;" alt=""/><br /><sub><b>AbelChe
-</b></sub></a><br />👋🐟
+</b></sub></a><br />🤤👋🐟
   </tr>
 <table>
 
