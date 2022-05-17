@@ -6,9 +6,9 @@ JAVA 插件化漏洞扫描器（Weblogic、Tomcat、Spring...），Gui基于java
 
 - 批量扫描
 
-- 支持多个Java中间件
+- 支持多个Java中间件、组件
 
-  ![image-20220515013757781](README.assets/image-20220515013757781.png)
+  ![image-20220517144031890](README.assets/image-20220517144031890.png)
 
 联系方式：MTI1MjgyMDg0OSMo6A//YjpAKXFxLmNvbQ==
 
@@ -17,6 +17,8 @@ JAVA 插件化漏洞扫描器（Weblogic、Tomcat、Spring...），Gui基于java
 ## 更新记录
 
 ```
+2022.05.17 - 更新部分系统UI，解决退出时假死问题，删除了一些POC的回显输出（感谢AbelChe大佬的支持）
+                
 2022.05.16 - 更新了插件目录异常问题、Tomcat 系列漏洞 POC 2个
                 CVE-2017-12615 CVE_2017_12615.jar
                 Tomcat后台泄漏 ADMIN_PAGE.jar
@@ -80,15 +82,15 @@ POC插件目录放在同目录下目录结构如下，Plugin/中间件类型/lib
 
 扫描器UI
 
-![image-20220515013803650](README.assets/image-20220515013803650.png)
+![image-20220517144031890](README.assets/image-20220517144031890.png)
 
 右键添加扫描任务，任务目标支持多个。
 
-![image-20220512130002107](README.assets/image-20220512130002107.png)
+![image-20220517155217154](README.assets/image-20220517155217154.png)
 
 扫描截图
 
-![image-20220515013814116](README.assets/image-20220515013814116.png)
+![image-20220517144031890](README.assets/image-20220517144031890.png)
 
 ## POC插件编写规范
 
@@ -156,7 +158,14 @@ public class CVE_2016_0638{
 
 ```
 
+# 贡献者
 
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/AbelChe"><img src="https://avatars.githubusercontent.com/u/40518242?v=4" width="100px;" alt=""/><br /><sub><b>AbelChe
+</b></sub></a><br />👋🐟
+  </tr>
+<table>
 
 ## 参考
 
