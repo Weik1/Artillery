@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.controlsfx.control.ListSelectionView?>
+<GridPane cacheHint="SPEED" depthTest="ENABLE" stylesheets="@../css/newtask.css" xmlns="http://javafx.com/javafx/16"
+          xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.artillery.controller.NewTaskController">
+    <children>
+
+        <TitledPane collapsible="false" maxHeight="1.7976931348623157E308" text="目标信息" GridPane.hgrow="SOMETIMES"
+                    GridPane.rowIndex="1" GridPane.vgrow="SOMETIMES">
+            <HBox focusTraversable="true">
+                <children>
+                    <Label alignment="CENTER" minWidth="-Infinity" prefHeight="17.0" prefWidth="52.0" text="URL:"
+                           textFill="#171717"/>
+                    <TextArea fx:id="targetTextArea" maxHeight="1.7976931348623157E308" prefWidth="300.0"
+                              promptText="http://127.0.0.1:7001" HBox.hgrow="SOMETIMES"/>
+                    <Label alignment="CENTER" layoutX="401.0" layoutY="109.0" minWidth="-Infinity" prefHeight="17.0"
+                           prefWidth="54.0" text="Type:" textFill="#0d0d0d"/>
+                    <ChoiceBox fx:id="typeChoiceBox" layoutX="451.0" layoutY="104.0" minWidth="150.0"
+                               onAction="#selectType">
+                        <items>
+                            <FXCollections fx:id="typeArrayList" fx:factory="observableArrayList">
+
+                            </FXCollections>
+                        </items>
+                    </ChoiceBox>
+                </children>
+
+            </HBox>
+        </TitledPane>
+
+        <ListSelectionView fx:id="vulListSelectionView" layoutX="26.0" layoutY="199.0" GridPane.rowIndex="2">
+            <tooltip>
+                <Tooltip text="请先选择类型"/>
+            </tooltip>
+        </ListSelectionView>
+
+        <HBox alignment="CENTER_RIGHT" GridPane.rowIndex="3">
+            <Button alignment="CENTER" graphicTextGap="1.0" layoutX="298.0" layoutY="528.0" maxWidth="-Infinity"
+                    minWidth="100.0" mnemonicParsing="false" onAction="#addTask" text="添加" textFill="#0d0d0d"/>
+
+        </HBox>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+    </rowConstraints>
+    <padding>
+        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0"/>
+    </padding>
+</GridPane>

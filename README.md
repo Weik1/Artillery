@@ -12,11 +12,13 @@ JAVA 插件化漏洞扫描器（Weblogic、Tomcat、Spring...），Gui基于java
 
 联系方式：MTI1MjgyMDg0OSMo6A//YjpAKXFxLmNvbQ==
 
-有任何问题，欢迎交流👏，提交POC请提issue或者直接联系我也行，开发能力实在堪忧，就不放源码了，需要的师傅可以直接邮件私聊。
+有任何问题，欢迎交流👏，提交POC请提issue或者直接联系我也行。
 
 ## 更新记录
 
 ```
+2022.05.29 - 更新源码
+
 2022.05.17 - 更新 JBoss 系列漏洞 POC 3个
                   CVE-2017-12149 CVE_2017_12149.jar
                   CVE-2017-7504  CVE_2017_7504.jar
