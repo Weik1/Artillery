@@ -17,7 +17,7 @@ JAVA 插件化漏洞扫描器（Weblogic、Tomcat、Spring...），Gui基于java
 ## 更新记录
 
 ```
-2022.05.30 - 更新某些版本jdk不自带javafx的问题（建议使用jdk8）。
+2022.05.30 - 更新某些版本jdk不自带javafx的问题（建议使用jdk8）
 
 2022.05.29 - 更新源码
 
