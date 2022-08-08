@@ -13,6 +13,9 @@ JAVA 插件化漏洞扫描器（Weblogic、Tomcat、Spring...），Gui基于java
 联系方式：MTI1MjgyMDg0OSMo6A//YjpAKXFxLmNvbQ==
 
 有任何问题，欢迎交流👏，提交POC请提issue或者直接联系我也行。
+## 知识星球
+可以加个知识星球，一起交流学习。
+![image](https://user-images.githubusercontent.com/34065927/183317871-0d4617b8-aa01-4a51-bd99-d98f13447d33.png)
 
 ## 更新记录
 
@@ -203,3 +206,5 @@ https://github.com/5up3rc/weblogic_cmd
  该项目未经作者本人允许，禁止商业使用。 
 
  任何人不得将其用于非法用途及盈利等目的，否则自行承担后果并负相应法律责任。
+	
+
