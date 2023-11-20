@@ -13,9 +13,6 @@ JAVA 插件化漏洞扫描器（Weblogic、Tomcat、Spring...），Gui基于java
 联系方式：MTI1MjgyMDg0OSMo6A//YjpAKXFxLmNvbQ==
 
 有任何问题，欢迎交流👏，提交POC请提issue或者直接联系我也行。
-## 知识星球
-可以加个知识星球，一起交流学习。
-![image](https://user-images.githubusercontent.com/34065927/183317871-0d4617b8-aa01-4a51-bd99-d98f13447d33.png)
 
 ## 更新记录
 
